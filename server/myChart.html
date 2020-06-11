@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Covid19 Chart</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src = "https://code.highcharts.com/highcharts.js"></script>
+<script>
+    $(function(){
+        $('#chartContainer').highcharts({
+           title : {
+               text : 'Top 5 States Covid19 Cases'
+           },
+           tooltip : {
+               pointFormat: '{series.name} : <b>{point.y}</b><br/>'
+           },
+           series :[
+               {
+                   type : 'pie',
+                   name : 'Total Cases',
+                   data : [['Maharashtra' , 88528],
+                  ['TamilNadu', 33229],['Delhi' , 29943],['Gujrat' , 20545],
+                  ['Uttar Pradesh', 10947]]
+               }
+           ]
+        })
+    })
+</script>
+</head>
+<body>
+    <div id="chartContainer" style="width: 700px;height: 500px; margin: 10px 20px 10px 20px;">
+    </div>
+</body>
+
+</html>
