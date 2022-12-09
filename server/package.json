@@ -9,7 +9,7 @@
   "author": "Anirban Das",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "mongodb": "^3.1.13",
     "mongoose": "^5.4.19",
     "mongoose-timestamp": "^0.6.0"
